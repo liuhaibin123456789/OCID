@@ -1,0 +1,13 @@
+host: localhost:8081
+info:
+  contact: {}
+  description: 基于golang开发得OIDC协议op，用于提供 code\id token\access token\第三方用户信息
+  title: OIDC协议
+  version: "1.0"
+paths: {}
+securityDefinitions:
+  CoreAPI:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

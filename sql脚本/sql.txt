@@ -1,0 +1,19 @@
+
+#服务端用户信息表
+CREATE DATABASE oidc;
+
+USE oidc;
+
+CREATE TABLE `user`(
+id INT PRIMARY KEY AUTO_INCREMENT,
+phone VARCHAR(11) UNIQUE,
+avatar VARCHAR(100) UNIQUE,
+user_name VARCHAR(20),
+email VARCHAR(25) UNIQUE,
+we_chat VARCHAR(16) UNIQUE,
+qq VARCHAR(20) UNIQUE
+)CHARSET=utf8;
+
+INSERT INTO `user` (phone,avatar,user_name,email,we_chat,qq)VALUES('15736469310','a.png','cold bin','3398341353@qq.com','wigx8215','3398341353');
+
+SELECT * FROM `user`;

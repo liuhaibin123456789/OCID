@@ -1,0 +1,18 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "基于golang开发得OIDC协议op，用于提供 code\\id token\\access token\\第三方用户信息",
+        "title": "OIDC协议",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:8081",
+    "paths": {},
+    "securityDefinitions": {
+        "CoreAPI": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}
